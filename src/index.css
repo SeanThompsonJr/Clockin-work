@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.blendIn {
+  background-color: rgba(156, 255, 248, 0.9);
+  /* background: linear-gradient(135deg, rgba(160, 255, 249), rgba(156, 255, 248)); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  app-region: drag;
+  user-select: none;
+}
+.tab {
+  border: 1px solid black;
+  width: 20rem;
+  border-top-right-radius: 70%;
+  border-bottom-right-radius: 70%;
+  font-size: 3.8rem;
+  padding: 1.4rem 0;
+}
+
+/* changing the color of the timer text */
+.timer-running {
+  color: green;
+}
+.timer-stopped {
+  color: red;
+}
+/* the initial and end of day timer text color */
+.timer-idle {
+  color: black;
+}
